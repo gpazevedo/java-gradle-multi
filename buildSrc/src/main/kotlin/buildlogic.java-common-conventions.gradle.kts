@@ -19,11 +19,11 @@ dependencies {
         // Define dependency versions as constraints
         implementation("org.apache.commons:commons-text:1.12.0")
     }
-
-    // Use JUnit Jupiter for testing.
-    testImplementation("org.junit.jupiter:junit-jupiter:5.10.3")
-
+    testImplementation("org.junit.jupiter:junit-jupiter:5.11.3")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+
+    implementation("org.slf4j:slf4j-api:2.0.15")
+    testImplementation("ch.qos.logback:logback-classic:1.5.12")
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
